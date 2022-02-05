@@ -936,8 +936,6 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -2px;
-  left: -1px;
   position: relative;
   background-color: #d1d3d1;
   content: "";
@@ -950,8 +948,6 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -2px;
-  left: -1px;
   position: relative;
   background-color: #e8aa31;
   content: "";
@@ -1311,6 +1307,14 @@ body {
     margin: 0px 0px 15px 0px;
   }
 
+  .item-block__header {
+    font-size: 20px;
+  }
+
+  .question__answer-text {
+    font-size: 16px;
+  }
+
   .result {
     margin: 30px auto 0px auto;
   }
@@ -1378,6 +1382,14 @@ body {
   }
 
   .main-wrapper__alert-text {
+    font-size: 14px;
+  }
+
+  .item-block__header {
+    font-size: 18px;
+  }
+
+  .question__answer-text {
     font-size: 14px;
   }
 
