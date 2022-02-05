@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Практическая работа 1</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/icons/favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220205172152">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__body">
+		<div class="header__title-block">
+			<div class="header__container container">
+				<h1 class="header__title">Основы Программирования</h1>
+			</div>
+		</div>
+		<nav class="header__menu menu">
+			<div class="header__container container">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="tests.html" class="menu__link">Тесты</a></li>
+					<li class="menu__item"><a href="theory.html" class="menu__link">Теория</a></li>
+					<li class="menu__item"><a href="pract.html" class="menu__link">Практические</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+		<main class="page">
+			<div class="page__wrapper wrapper-page">
+				<div class="wrapper-page__container container">
+					<div class="wrapper-page__sidebar sidebar">
+	<div class="sidebar__body">
+		<div class="sidebar__logo">
+			<picture><source srcset="img/icons/TSTU.webp" type="image/webp"><img src="img/icons/TSTU.jpg" alt=""></picture>
+		</div>
+		<div class="sidebar__menu menu-sidebar">
+			<div class="menu-sidebar__top">
+				<div class="menu-sidebar__label">Быстрое оглавление</div>
+				<div class="menu-sidebar__menu-icon icon-menu">
+					<span></span><span></span><span></span>
+				</div>
+			</div>
+			<nav class="menu-sidebar__nav menu__body">
+				<div class="menu-sidebar__nav-header">
+					<div class="menu-sidebar__menu-icon icon-menu">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+				<ul class="menu-sidebar__list">
+					<li class="menu-sidebar__item"><span>Раздел 1</span>
+						<ul class="menu-sidebar__sub-list">
+							<li class="menu-sidebar__sub-item"><a href="theory1.html" class="menu-sidebar__link">Принципы
+									структурного и
+									модульного
+									программирования</a>
+							</li>
+							<li class="menu-sidebar__sub-item"><a href="pract_w1.html" class="menu-sidebar__link">Практическая
+									работа 1</a>
+							</li>
+							<li class="menu-sidebar__sub-item"><a href="test1.html" class="menu-sidebar__link">Тест по теме
+									1.1</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+					<div class="wrapper-page__main-content main-content">
+	<h2 class="pract-work__title title">Практическая работа 1</h2>
+	<div class="main-content__pract-work pract-work common-text">
+		<div class="pract-work__purpose pract-work__item"><span class="big-span">Цель работы: </span>Получить практические
+			навыки реализации линейных и разветвляющихся алгоритмов на языке С++.</div>
+		<div class="pract-work__item pract-work__item"><span class="big-span">Материально - техническое обеспечение:
+			</span>компьютер IBM PC, Visual Studio 2008 ( Visual Studio 6.0).</div>
+		<div class="pract-work__item"><span class="big-span"><a target="_blank" class="pract-work__item-link"
+					href="theory1.html">Тоеретическая часть
+					(смотреть)</a></span>
+		</div>
+		<div class="pract-work__item-progress pract-work__item"><span class="big-span">Ход работы</span></div>
+		<ol class="pract-work__item-progress-list pract-work__item">
+			<li class="pract-work__item-progress-item">Составить блок-схемы алгоритмов решения задач,
+				предложенных в задании.
+			</li>
+			<li class="pract-work__item-progress-item">На основе полученного графического описания
+				разработать программы на языке С++.<br>
+				<span class="big-span">Примечание: </span>для некоторых заданий уже даны либо алгоритмы, либо программы на
+				языке С++.
+			</li>
+			<li class="pract-work__item-progress-item">Используя среду программирования Visual Studio 2008 (
+				Visual Studio 6.0) выполнить программы, произвести их отладку.
+			</li>
+		</ol>
+	</div>
+	<div class="main-content__tasks tasks">
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 1. </span> Найти значение выражения</div>
+			<div class="tasks__block">
+				<div class="tasks__item">
+					<div class="tasks__img">
+						<picture><source srcset="img/tasks/pract_work1/1.webp" type="image/webp"><img src="img/tasks/pract_work1/1.jpg" alt=""></picture>
+					</div>
+					<div class="tasks__code">
+						<picture><source srcset="img/tasks/pract_work1/1_2.webp" type="image/webp"><img src="img/tasks/pract_work1/1_2.jpg" alt=""></picture>
+					</div>
+				</div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<div class="tasks__solution-in">Введите значение вещ x: <input placeholder="значение" id="valueX"
+								type="text">
+						</div>
+						<button id="butt1" class="tasks__count">Посчитать</button>
+						<div class="tasks__solution-out">Вывод y: <span id="outputY">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 2. </span> Найти площадь и периметр прямоугольного
+				треугольника</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<picture><source srcset="img/tasks/pract_work1/ans1.webp" type="image/webp"><img src="img/tasks/pract_work1/ans1.jpg" alt=""></picture>
+						<div class="tasks__solution-in">Введите значение цел или вещ a: <input placeholder="значение"
+								id="valueA" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ b: <input placeholder="значение"
+								id="valueB" type="text">
+						</div>
+						<button id="butt2" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод S: <span id="outputS">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 3. </span> Найти значение выражения</div>
+			<div class="tasks__block">
+				<div class="tasks__item">
+					<div class="tasks__img">
+						<picture><source srcset="img/tasks/pract_work1/2.webp" type="image/webp"><img src="img/tasks/pract_work1/2.jpg" alt=""></picture>
+					</div>
+					<div class="tasks__code">
+						<picture><source srcset="img/tasks/pract_work1/2_2.webp" type="image/webp"><img src="img/tasks/pract_work1/2_2.jpg" alt=""></picture>
+					</div>
+					<div class="tasks__sub-text">
+						Формула: <picture><source srcset="img/tasks/pract_work1/2_3.webp" type="image/webp"><img src="img/tasks/pract_work1/2_3.jpg" alt=""></picture>
+					</div>
+				</div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<div class="tasks__solution-in">Введите значение цел или вещ m: <input placeholder="значение"
+								id="valueM" type="text">
+						</div>
+						<button id="butt3" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод y: <span id="outputY2">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 4. </span> Найти значение выражения</div>
+			<div class="tasks__block">
+				<div class="tasks__item">
+					<div class="tasks__img">
+						<picture><source srcset="img/tasks/pract_work1/3.webp" type="image/webp"><img src="img/tasks/pract_work1/3.jpg" alt=""></picture>
+					</div>
+				</div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<div class="tasks__solution-in">Введите значение цел или вещ x: <input placeholder="значение"
+								id="valueX2" type="text">
+						</div>
+						<button id="butt4" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод y: <span id="outputY3">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 5. </span> Cоздать меню для вычисления площадей фигур:
+				прямоугольник, круг, треугольник (С клавиатуры вводится номер фигуры, в зависимости от
+				которого вычисляется площадь)</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<picture><source srcset="img/tasks/pract_work1/ans3.webp" type="image/webp"><img src="img/tasks/pract_work1/ans3.png" alt=""></picture>
+						<div class="tasks__title">Площадь прямоугольника</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ a: <input placeholder="значение"
+								id="valueA2" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ b: <input placeholder="значение"
+								id="valueB2" type="text">
+						</div>
+						<button id="butt5" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод S: <span id="outputS2">...</span></div>
+						<picture><source srcset="img/tasks/pract_work1/ans2.webp" type="image/webp"><img src="img/tasks/pract_work1/ans2.jpg" alt=""></picture>
+						<div class="tasks__title">Площадь круга</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ R: <input placeholder="значение"
+								id="valueR" type="text">
+						</div>
+						<button id="butt5_1" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод S: <span id="outputS2_1">...</span></div>
+						<picture><source srcset="img/tasks/pract_work1/ans1.webp" type="image/webp"><img src="img/tasks/pract_work1/ans1.jpg" alt=""></picture>
+						<div class="tasks__title">Площадь треугольника</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ a: <input placeholder="значение"
+								id="valueA2_1" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ b: <input placeholder="значение"
+								id="valueB2_1" type="text">
+						</div>
+						<button id="butt5_2" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод S: <span id="outputS2_2">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 6. </span> Дана длина ребра куба. Найти площадь грани,
+				площадь полной
+				поверхности и объем куба.</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<picture><source srcset="img/tasks/pract_work1/ans4.webp" type="image/webp"><img src="img/tasks/pract_work1/ans4.jpg" alt=""></picture>
+						<div class="tasks__do">
+							<div class="tasks__solution-in">Введите значение цел или вещ a: <input placeholder="значение"
+									id="valueD" type="text">
+							</div>
+							<button id="butt6" class="tasks__count butt">Посчитать</button>
+							<div class="tasks__title">Площадь грани</div>
+							<div class="tasks__solution-out">Вывод S: <span id="outputS3_1">...</span></div>
+							<div class="tasks__title">Площадь полной поверхности</div>
+							<div class="tasks__solution-out">Вывод S: <span id="outputS3_2">...</span></div>
+							<div class="tasks__title">Объем куба</div>
+							<div class="tasks__solution-out">Вывод S: <span id="outputS3_3">...</span></div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 7. </span> Вычислить расстояние между двумя точками с
+				данными
+				координатами
+				(x1, y1) и (x2, y2).</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<picture><source srcset="img/tasks/pract_work1/ans5.webp" type="image/webp"><img src="img/tasks/pract_work1/ans5.png" alt=""></picture>
+						<div class="tasks__solution-in">Введите значение цел или вещ x1: <input placeholder="значение"
+								id="valueX3_1" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ x2: <input placeholder="значение"
+								id="valueX3_2" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ y1: <input placeholder="значение"
+								id="valueY3_1" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ y2: <input placeholder="значение"
+								id="valueY3_2" type="text">
+						</div>
+						<button id="butt7" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод L: <span id="outputL">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 8. </span> Алгоритм перевода температуры из градусов С
+				в значение
+				температуры по шкале Кельвина и Фаренгейта.</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<picture><source srcset="img/tasks/pract_work1/ans7.webp" type="image/webp"><img src="img/tasks/pract_work1/ans7.png" alt=""></picture>
+						<picture><source srcset="img/tasks/pract_work1/ans6.webp" type="image/webp"><img src="img/tasks/pract_work1/ans6.png" alt=""></picture>
+						<div class="tasks__solution-in">Введите значение цел или вещ t (°C): <input placeholder="значение"
+								id="valueT" type="text">
+						</div>
+						<button id="butt8" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__title">Из градусов Цельсия в значение температуры по шкале Кельвина</div>
+						<div class="tasks__solution-out">Вывод K: <span id="outputT">...</span></div>
+						<div class="tasks__title">Из градусов Цельсия в значение температуры по шкале Фаренгейта</div>
+						<div class="tasks__solution-out">Вывод F: <span id="outputT_1">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 9. </span> Найти корни квадратного уравнения и вывести
+				их на экран, если
+				они есть. Если корней нет, то вывести сообщение об этом. Конкретное квадратное уравнение определяется
+				коэффициентами a, b, c, которые вводит пользователь.</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<picture><source srcset="img/tasks/pract_work1/ans8.webp" type="image/webp"><img src="img/tasks/pract_work1/ans8.png" alt=""></picture>
+						<div class="tasks__solution-in">Введите значение цел или вещ a: <input placeholder="значение"
+								id="valueA3_1" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ b: <input placeholder="значение"
+								id="valueA3_2" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ c: <input placeholder="значение"
+								id="valueA3_3" type="text">
+						</div>
+						<button id="butt9" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод D: <span id="outputX_Y">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 10. </span> Определить, принадлежит ли точка с
+				заданными координатами
+				заштрихованной области.</div>
+			<div class="tasks__block">
+				<div class="tasks__item">
+					<div class="tasks__img">
+						<picture><source srcset="img/tasks/pract_work1/4.webp" type="image/webp"><img src="img/tasks/pract_work1/4.png" alt=""></picture>
+					</div>
+				</div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<div class="tasks__solution-in">Введите значение цел или вещ x: <input placeholder="значение"
+								id="valueX5" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ y: <input placeholder="значение"
+								id="valueY5" type="text">
+						</div>
+						<button id="butt10" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод y: <span id="outputS4">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 11. </span> Вычислить значение функции y = f(x).<div>y
+					= 2x - n, если x
+					> n
+				</div>
+				<div>y = 0, если x = n</div>
+				<div>y = n/(3x - 1), если x &lt; n</div>
+			</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<div class="tasks__solution-in">Введите значение цел или вещ x: <input placeholder="значение"
+								id="valueX4_1" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ n: <input placeholder="значение"
+								id="valueX4_2" type="text">
+						</div>
+						<button id="butt11" class="tasks__count butt">Посчитать</button>
+						<div class="tasks__solution-out">Вывод y: <span id="outputY4">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+		<div class="tasks__task">
+			<div class="tasks__label"><span class="dart-span">Задача 12. </span> Определить сущестование треугольника и его
+				тип. По длинам
+				трех отрезков, введенных пользователем, определить возможоность сущестования треугольника, составленного из
+				этих отрезков. Если такой треугольник существует, то определить, является ли он равносторонним.</div>
+			<div class="tasks__block">
+				<div class="tasks__item"></div>
+				<div class="tasks__solution">
+					<div class="tasks__do">
+						<div class="tasks__solution-in">Введите значение цел или вещ a: <input placeholder="значение"
+								id="valueA4_1" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ b: <input placeholder="значение"
+								id="valueA4_2" type="text">
+						</div>
+						<div class="tasks__solution-in">Введите значение цел или вещ b: <input placeholder="значение"
+								id="valueA4_3" type="text">
+						</div>
+						<button id="butt12" class="tasks__count butt">Проверить</button>
+						<div class="tasks__solution-out">Вывод S: <span id="outputBoolean">...</span></div>
+					</div>
+				</div>
+				<button type="button" class="tasks__show">Решение</button>
+			</div>
+		</div>
+	</div>
+	<div class="main-content__questions questions">
+		<div class="questions__title title-dart">Вопросы по теме 1.1 : Основные понятия алгоритмизации.</div>
+		<ol class="questions__list">
+			<li class="questions__item">Дать определение алгоритма.</li>
+			<li class="questions__item">Перечислить основные свойства алгоритмов.</li>
+			<li class="questions__item">Что понимают под объемом алгоритма?</li>
+			<li class="questions__item">Что такое связанность алгоритма?</li>
+			<li class="questions__item">Что характеризует разветвленность алгоритма?</li>
+			<li class="questions__item">Чем определяется длительность решения алгоритма?</li>
+			<li class="questions__item">В чем заключается цикличность алгоритма?</li>
+			<li class="questions__item">Дать понятие словесного описания алгоритмов.</li>
+			<li class="questions__item">Дать понятие графического описания алгоритмов.</li>
+			<li class="questions__item">Какой алгоритм называется линейным?</li>
+			<li class="questions__item">Какой алгоритм называется разветвляющимся?</li>
+			<li class="questions__item">Какой алгоритм называется циклическим?</li>
+		</ol>
+	</div>
+	<div class="main-content__links-test links-test"><a href="test1.html" class="links-test__link-test link-dark"
+			target="_blank">Тест по
+			теме
+			1.1</a>
+	</div>
+</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+	<div class="footer__container container">
+		<a href="index.html" class="footer__link">Ссылка на Главную</a>
+	</div>
+</footer>
+
+<div class="wrapper__alert-ie alert-ie">
+	<div class="alert-ie__message">
+		<div class="alert-ie__text"><span>Internet Explorer</span> устарел, Запустить с другого браузера</div>
+	</div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js?_v=20220205172152"></script>
+</body>
+
+</html>
